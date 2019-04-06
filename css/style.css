@@ -17,8 +17,10 @@ body{
 .invisible-nav{
     display: flex;
     justify-content: normal;
-    padding-left: 1%;
+    padding: 8px 20px;
     margin-top: 1%;
+    z-index: 99;
+    width: 100%;
 }
 
 .btn{
@@ -42,12 +44,43 @@ body{
     font-size: 23px;
 }
 
+.holder{
+    z-index: 99;
+    margin-left: 78%;
+    padding-top: 21px; 
+       
+}
+
+.holder a{
+    font-size: 37px;
+}
+
+.holder a:hover{
+    color: blueviolet;
+}
+
+.hold{
+    padding-top: 21px;
+    z-index: 99;
+    padding-left: 1px;
+}
+
+.hold a{
+    font-size: 37px;
+}
+
+.hold a:hover{
+    color: blueviolet;
+}
+
+
 .squares ul{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .squares ul li{
@@ -156,33 +189,6 @@ body{
     animation: ani 4s linear infinite;
 }
 
-.circles ul li:nth-child(1){
-    left: 15%;
-    animation-delay: 2s;
-}
-
-.circles ul li:nth-child(2){
-    left: 44%;
-    animation-delay: 3s;
-}
-
-.circles ul li:nth-child(3){
-    left: 72%;
-    animation-delay: 4s;
-}
-
-@keyframes ani{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-50px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
 .container{
     padding-top: 1px;
     text-align: center;
@@ -278,11 +284,11 @@ img{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
-    background-color: rgb(87, 118, 255);
+    background-color: rgb(210, 210, 210);
 }
 
 /*hover effect*/
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(87, 171, 255, 1);
+    background-color: rgba(131, 27, 228, 0.452);
 }
 
