@@ -26,7 +26,7 @@ body{
 .btn{
     margin-top: 1%;
     background: transparent;
-    font-size: 23px;
+    font-size: 33px;
     border-radius: 30px;
     padding:12px 20px;
     text-decoration: none;
@@ -41,7 +41,7 @@ body{
 .btn:hover{
     background-color: #6359a6;
     color: white;
-    font-size: 23px;
+    font-size: 33px;
 }
 
 .holder{
