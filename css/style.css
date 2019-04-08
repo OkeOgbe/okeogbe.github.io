@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px; 
     overflow-x: hidden;
+    font-family: cursive;
 }
 
 .header{
@@ -26,9 +27,9 @@ body{
 .btn{
     margin-top: 1%;
     background: transparent;
-    font-size: 33px;
+    font-size: 20px;
     border-radius: 30px;
-    padding:12px 20px;
+    padding:13px 21px;
     text-decoration: none;
     transition: .5s ease-in-out;
     color: rgb(99, 89, 166);
@@ -41,7 +42,7 @@ body{
 .btn:hover{
     background-color: #6359a6;
     color: white;
-    font-size: 33px;
+    font-size: 20px
 }
 
 .holder{
@@ -52,7 +53,7 @@ body{
 }
 
 .holder a{
-    font-size: 37px;
+    font-size: 30px;
 }
 
 .holder a:hover{
@@ -66,7 +67,7 @@ body{
 }
 
 .hold a{
-    font-size: 37px;
+    font-size: 30px;
 }
 
 .hold a:hover{
@@ -213,26 +214,18 @@ img{
 }
 
 .p1{
-    background-color: rgba(87, 171, 255, 1);
+    background-color: rgb(130, 119, 206);
     color: whitesmoke;
     display: block;
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 150px;
 }
 
 .t1{
     font-size: 52px;
-    padding-left: 3%;
-    padding-top: 25px;
-    margin-top: -4px;
     font-weight: bolder;
-    padding-bottom: 35px;
 }
 
 .t2{
-   padding-left: 35px;
-   padding-right: 22px;
    margin-top: -20px;
     font-size: 17px;
 }
@@ -244,22 +237,19 @@ img{
 
 .p2{
     text-align: center;
-    background-color: royalblue;
-    width: 60%;
-    margin-left: 20%;
+    background-color: #1a61aa;
     color: snow;
-    border-radius: 50px;
+    margin-top: 10%;
 }
 
 .t3{
     font-size: 30px;
     padding-top: 20px;
-    margin-top: -26px;
+    padding-bottom: 20px;
 }
 
 .d1{
-    height: 200px;
-    margin-left: 0%;
+    height: 140px;
     margin-top: auto;
 }
 
