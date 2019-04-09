@@ -176,18 +176,27 @@ body{
         border-radius: 50%;
     }
 }
-
-.circles ul li{
-    position: absolute;
+ 
+.spinning-box{
     height: 125px;
     width: 125px;
     border-width: 5px;
     border: solid;
-    border-color: rgba(87, 118, 255, 0.75);
-    border-radius: 50%;
-    list-style: none;
-    display: block;
-    animation: ani 4s linear infinite;
+    border-color: #ffffff1a;
+    z-index: 0;
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 52px;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+       transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg); 
+    }
 }
 
 .container{
@@ -207,17 +216,21 @@ body{
     font-size: 32px;
 }
 
-img{
+.avatar{
     height: 250px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
+    padding-bottom: 6%
 }
 
 .p1{
-    background-color: rgb(130, 119, 206);
+    background-color: rgba(99, 89, 166, 0.92);
     color: whitesmoke;
     display: block;
     text-align: center;
+    width: 100%;
+    height: 70vh;
+
 }
 
 .t1{
@@ -228,18 +241,26 @@ img{
 .t2{
    margin-top: -20px;
     font-size: 17px;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .t2-1{
     font-size: 17px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;  
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .p2{
     text-align: center;
     background-color: #1a61aa;
     color: snow;
-    margin-top: 10%;
+    margin-top: -12%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 10px;
+    box-shadow: 8px 20px 20px 20px rgba(7, 55, 74, 0.39);
 }
 
 .t3{
@@ -259,6 +280,8 @@ img{
 
 .t4-1{
     font-size: 17px;  
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 /*scrollbar custom*/
