@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px; 
     overflow-x: hidden;
-    font-family: cursive;
+    font-family: "Raleway", sans-serif;
 }
 
 .header{
@@ -47,33 +47,19 @@ body{
 
 .holder{
     z-index: 99;
-    margin-left: 78%;
+    position: absolute;
     padding-top: 21px; 
        
 }
 
-.holder a{
+ .a{
     font-size: 30px;
+    float: right;
 }
 
-.holder a:hover{
+.a:hover{
     color: blueviolet;
 }
-
-.hold{
-    padding-top: 21px;
-    z-index: 99;
-    padding-left: 1px;
-}
-
-.hold a{
-    font-size: 30px;
-}
-
-.hold a:hover{
-    color: blueviolet;
-}
-
 
 .squares ul{
     position: absolute;
@@ -187,7 +173,7 @@ body{
     position: absolute;
     margin-left: 85px;
     margin-top: 52px;
-    animation: spin 6s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 @keyframes spin{
@@ -261,7 +247,10 @@ body{
     margin-right: 7%;
     border-radius: 10px;
     box-shadow: 8px 20px 20px 20px rgba(7, 55, 74, 0.39);
+    padding-right: 10%;
+    padding-left: 10%;
 }
+
 
 .t3{
     font-size: 30px;
@@ -274,12 +263,27 @@ body{
     margin-top: auto;
 }
 
+.d2{
+    height: 140px;
+    margin-top: auto;
+}
+
 .t4{
     font-size: 21px;
 }
 
 .t4-1{
     font-size: 17px;  
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.t5{
+    font-size: 21px;
+}
+
+.t5-1{
+    font-size: 17px;
     margin-left: 7%;
     margin-right: 7%;
 }
