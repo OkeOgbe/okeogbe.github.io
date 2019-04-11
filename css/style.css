@@ -61,4 +61,24 @@ h1{
 footer{
     border-top: solid;
     border-top-width: 2px;
+    font-size: 22px;
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    border-top-color: lightgray;
 }
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 12vh;
+}
+
+.forms{
+    text-align: center;
+}
+
+form{
+    margin-top: 1.5%;
+}
+  
