@@ -2,6 +2,8 @@ body{
    margin: 0px;
    padding: 0px;
    font-family: "Raleway", sans-serif;
+   height: 100vh;
+   overflow: hidden;
 }
 
 .nav-bar{
@@ -138,4 +140,47 @@ textarea{
 .Send:hover{
     background-color: purple;
     color: whitesmoke;
+}
+
+.colunms.row{
+    display: flex;
+}
+
+.col-md-6.col-1{
+    text-align: center;
+    height: 100vh;
+    color: #7441b7;
+    font-weight: bolder;
+}
+
+.avatar{
+    height: 51vh;
+}
+
+.Name{
+    font-size: 40px;
+}
+
+.Job{
+    font-size: 20px;
+    margin: -21px;
+}
+
+.col-md-6.col-2{
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link00{
+    font-size: 30px;
+    margin-right: 8%;
+    color: antiquewhite;
+}
+
+.link01{
+    font-size: 30px;
+    margin-left: 8%;
+    color: antiquewhite;
 }
