@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="/assets/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" rel="stylesheet">
        </head>
 
        <body>
@@ -18,22 +19,29 @@
             </nav>
             <div class="Contact">
                 <h1 class="h1">Contact</h1>
-                <div class=forms>
-                  <form>
-                       Name:<br>
-                       <input type="text" required>
-                   </form>
-                   <form>
-                       Phone:<br>
-                       <input type="tel" required>
-                   </form>  
-                   <form>
-                       Email:<br>
-                      <input type="email" required>
-                   </form>     
-                   <form>
-                       Message:<br>
-                       <textarea style="width:40%; height:165px; "  required></textarea>
-                   </form>
-               </div>                                  
+                <div class="forms row">
+                    <div class="col-md-6">
+                        <form>
+                          <input type="text" required placeholder="Name">
+                        </form>
+                        <form>
+                          <input type="tel" required placeholder="Phone">
+                        </form>  
+                        <form>
+                          <input type="email" required placeholder="Email">
+                       </form>
+                    </div>
+                    <div class="col-md-6">        
+                       <form>
+                          <textarea required placeholder="Message"></textarea>
+                        </form>
+                        <button class="Send">Send</button>
+                    </div>
+               </div>
             </div>
+            <footer class="foot">
+              <a  class="a" href="https://www.instagram.com/dhar_niell/" target="_blank"><i class="fab  fa-fw fa-instagram" ></i></a>
+              <a  class="a" href="https://www.facebook.com/daniel.ogbe.509" target="_blank"><i class="fab  fa-fw fa-facebook" ></i></a> 
+              <a class= "a" href="https://github.com/OkeOgbe" target="_blank"><i class="fab  fa-fw fa-github"></i></a>                
+            </footer>                                  
+            

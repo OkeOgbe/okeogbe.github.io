@@ -74,11 +74,68 @@ footer{
     height: 12vh;
 }
 
-.forms{
-    text-align: center;
+.forms.row{
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 form{
-    margin-top: 1.5%;
+    margin-top: 2.2%;
+}
+
+input{
+    width: 100%;
+    font-size: 17px;
+    padding: 2%;
+    border: solid;
+    border-width: 2px;
+    border-color: purple;
+    font-family: "Raleway", sans-serif;
+}
+
+.foot{
+    border-top: solid;
+    border-top-width: 2px;
+    font-size: 22px;
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    border-top-color: lightgray;
+    margin-top: 2%;  
 }
   
+textarea{
+    width: 100%;
+    height: 175px;
+    font-size: 17px;
+    padding: 2%;
+    border: solid;
+    border-width: 2px;
+    border-color: purple;
+    font-family: "Raleway", sans-serif;
+}
+
+.Contact{
+    height: 75vh;
+}
+
+.Send{
+    background: transparent;
+    font-size: 17px;
+    font-weight: bolder;
+    color: purple;
+    font-family: "Raleway", sans-serif;
+    border-radius: 19px;
+    width: 23%;
+    padding: 6px;
+    margin-top: 6%;
+    border: solid;
+    border-width: 2px;
+    transition: 1s ease-in-out;
+}
+
+.Send:hover{
+    background-color: purple;
+    color: whitesmoke;
+}
