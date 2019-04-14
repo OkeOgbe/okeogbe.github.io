@@ -3,7 +3,7 @@ body{
    padding: 0px;
    font-family: "Raleway", sans-serif;
    height: 100vh;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 
 .nav-bar{
@@ -146,7 +146,7 @@ textarea{
     display: flex;
 }
 
-.col-md-6.col-1{
+.c1{
     text-align: center;
     height: 100vh;
     color: #7441b7;
@@ -166,11 +166,12 @@ textarea{
     margin: -21px;
 }
 
-.col-md-6.col-2{
+.c2{
     background-color: mediumpurple;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .link00{
