@@ -4,6 +4,7 @@ body{
    font-family: "Raleway", sans-serif;
    height: 100vh;
    overflow-x: hidden;
+   color: purple;
 }
 
 .nav-bar{
