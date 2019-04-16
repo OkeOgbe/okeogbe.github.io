@@ -56,8 +56,7 @@ h1{
 .t1{
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 18px;
-    margin-top: 35px; 
+    font-size: 18px; 
 }
 
 footer{
@@ -212,6 +211,6 @@ textarea{
     }
 
     .h2{
-        height: 15vh;
+        height: 5vh;
     }
 }
