@@ -8,7 +8,6 @@ body{
 }
 
 .nav-bar{
-    width: 100%;
     font-size: 21px;
     border-bottom: solid;
     border-bottom-width: 2px;
@@ -44,7 +43,7 @@ a:hover{
 
 .about{
     text-align: justify;
-    height: 510px;
+    height: 80vh;
 }
 
 h1{
@@ -136,6 +135,7 @@ textarea{
     border: solid;
     border-width: 2px;
     transition: 1s ease-in-out;
+    cursor: pointer;
 }
 
 .Send:hover{
@@ -187,4 +187,31 @@ textarea{
     color: antiquewhite;
 }
 
-  
+/*Media Queries*/
+
+@media screen and (max-width: 600px) {
+    .c1{
+        height: 85vh;
+    }
+
+    .c2{
+        height: 55vh;
+    }
+
+    .foot{
+        margin-top: 6%;
+        padding-top: 5%;
+    }
+
+    .Contact{
+        height: 90vh;
+    }
+
+    .about{
+        height: 85vh;
+    }
+
+    .h2{
+        height: 15vh;
+    }
+}
