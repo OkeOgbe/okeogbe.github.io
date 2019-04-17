@@ -6,7 +6,9 @@ body{
    overflow-x: hidden;
    color: purple;
 }
-
+.wrapper {
+    padding: 0 !important;
+}
 .nav-bar{
     font-size: 21px;
     border-bottom: solid;
@@ -20,6 +22,7 @@ a{
     text-decoration: none;
     font-weight: bolder;
     color: purple;
+    text-transform:capitalize !important;
 }
 
 a:hover{
@@ -151,19 +154,24 @@ textarea{
     height: 100vh;
     color: #7441b7;
     font-weight: bolder;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .avatar{
-    height: 51vh;
+    width: 50%;    
 }
 
 .Name{
     font-size: 40px;
+    line-height: 1px;
 }
 
 .Job{
     font-size: 20px;
-    margin: -21px;
+    line-height: 1px;
+   
 }
 
 .c2{
@@ -174,27 +182,35 @@ textarea{
     height: 100vh;
 }
 
-.link00{
-    font-size: 30px;
-    margin-right: 8%;
+.c2 > .link {
     color: antiquewhite;
+    padding: 16px 14px;
+    font-size: 18px;
 }
 
-.link01{
-    font-size: 30px;
-    margin-left: 8%;
-    color: antiquewhite;
+.con{
+    margin: 0;
 }
 
 /*Media Queries*/
 
 @media screen and (max-width: 600px) {
     .c1{
-        height: 85vh;
+        height: 50vh;
     }
 
     .c2{
-        height: 55vh;
+        height: 50vh;
+    }
+
+    .avatar{
+        width: 50%;
+    }
+
+    .row{
+        width: 100%;
+        margin:0 !important;
+        overflow: hidden;
     }
 
     .foot{
