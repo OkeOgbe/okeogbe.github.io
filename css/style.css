@@ -188,10 +188,6 @@ textarea{
     font-size: 18px;
 }
 
-.con{
-    margin: 0;
-}
-
 /*Media Queries*/
 
 @media screen and (max-width: 600px) {
