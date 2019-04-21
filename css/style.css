@@ -120,8 +120,13 @@ textarea{
     font-family: "Raleway", sans-serif;
 }
 
-.Contact{
+.contact{
     height: 75vh;
+    padding-top: 6%;
+}
+
+input{
+    margin-top: 10px;
 }
 
 .Send{
