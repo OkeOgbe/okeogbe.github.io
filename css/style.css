@@ -183,6 +183,46 @@ input{
     font-size: 18px;
 }
 
+.menu {
+	height:100vh;
+	position:relative;
+	background:firebrick;
+	width: 0;
+	text-align:center;
+	position:fixed;
+	right: -20%;
+  z-index: 999999999999;
+  -webkit-transition: .6s linear;
+  transition: .6s linear;
+}
+  
+.menu a{
+	color:#FFFFFF;
+	display:block;
+	line-height:50px;
+}		
+
+.active {
+	width: 50%;
+	right:0;
+}
+
+span {
+	cursor:pointer;
+}
+
+#close {
+	position:absolute;
+	top:1em;
+    right:1em;
+}
+
+#toggle {
+	cursor:pointer;
+    float:right;
+    padding-right: 4%;
+    display: none;
+}
 /*Media Queries*/
 
 @media screen and (max-width: 600px) {
@@ -206,5 +246,20 @@ input{
 
     .about .about-content {
     text-align: center;
-}
+    }
+    
+    #toggle {
+        display: block;
+    }
+
+    .link2{
+        display: none;
+    }
+
+    .link3{
+        display: none;
+    }
+
+
+    
 }
