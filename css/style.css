@@ -8,6 +8,12 @@ body{
 }
 .wrapper {
     padding: 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50%, -50%);
+
 }
 .nav-bar{
     font-size: 21px;
@@ -46,30 +52,26 @@ a:hover{
 
 .about{
     text-align: justify;
-    height: 80vh;
+    height: 100%;
+    text-align: center;
+    padding: 1em;
+   
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 35vh;
+.about .about-content {
+    text-align: justify;
+    margin-left: -2px;
 }
 
-.t1{
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 18px; 
-}
 
 footer{
-    border-top: solid;
-    border-top-width: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     font-size: 22px;
-    padding-top: 1.5%;
-    display: flex;
-    justify-content: center;
-    border-top-color: lightgray;
+    padding: 14px 16px;
+    text-align: center;
+    border-top: 1px solid #ccc;
 }
 .h1{
     display: flex;
@@ -223,11 +225,7 @@ input{
         height: 90vh;
     }
 
-    .about{
-        height: 85vh;
-    }
-
-    .h2{
-        height: 5vh;
-    }
+    .about .about-content {
+    text-align: center;
+}
 }
