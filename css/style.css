@@ -260,6 +260,42 @@ span {
         display: none;
     }
 
-
+    .menu {
+        height:100vh;
+        position:relative;
+        background: mediumpurple;
+        width: 0;
+        text-align:center;
+        position:fixed;
+        right: -20%;
+        z-index: 999999999999;
+       -webkit-transition: .6s linear;
+       transition: .6s linear; 
+     
+    }
+      
+    .menu a{
+        color:#FFFFFF;
+        display:block;
+        line-height:50px;
+        padding-top: 50%;
+        margin-top: 78px;
+    }		
+    
+    .active {
+        width: 50%;
+        right:0;
+    }
+    
+    span {
+        cursor:pointer;
+    }
+    
+    #close {
+        position:absolute;
+        top:1em;
+        right:1em;
+        color: white;
+    }
     
 }
