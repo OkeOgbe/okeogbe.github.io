@@ -22,6 +22,7 @@
   <body>
     <nav class="nav-bar">
       <a  class="link1" href="index.html">Daniel</a>
+     
       <div id="men" class="menu">
         <span class="fa fa-times" id="close"></span>
         <div class="content-is-centered">
@@ -34,24 +35,26 @@
      <a class="link2" href="contact.html">contact</a>
      <a  class="link3" href="about.html">about</a>
     </nav>
-    <div class="content-is-centered contact">
-      <h1 class="h1 animated flipInX delay-0s">Contact</h1>
-      <div class="animated fadeInUp delay-0s">
-        <form action="https://usebasin.com/f/3d0a6e5da0dc" method="POST">
-          <div class="forms row">
-            <div class="col-md-6">
-              <input type="text" name="name" required placeholder="Name">
+    <div class="content-is-centered container">
+      <div class="contact">
+       <h1 class="h1 animated flipInX delay-0s">Contact</h1>
+       <div class="animated fadeInUp delay-0s">
+         <form action="https://usebasin.com/f/3d0a6e5da0dc" method="POST">
+           <div class="forms row">
+             <div class="col-md-6">
+               <input type="text" name="name" required placeholder="Name">
               
-              <input type="tel" name="phone" required placeholder="Phone">
+               <input type="tel" name="phone" required placeholder="Phone">
               
-              <input type="email" name="email" required placeholder="Email">
+               <input type="email" name="email" required placeholder="Email">
+             </div>
+             <div class="col-md-6">
+               <textarea name="message" required placeholder="Message"></textarea>
+               <button class="Send">Send</button>
+             </div>
             </div>
-            <div class="col-md-6">
-              <textarea name="message" required placeholder="Message"></textarea>
-              <button class="Send">Send</button>
-            </div>
-          </div>
-        </form>
+         </form>
+       </div>
       </div>
     </div>
     <footer class="foot">
