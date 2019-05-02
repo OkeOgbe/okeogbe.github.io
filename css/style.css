@@ -6,11 +6,13 @@ body{
    overflow-x: hidden;
    color: purple;
 }
+
 .wrapper {
     padding: 0 !important;
     
 
 }
+
 .nav-bar{
     font-size: 21px;
     border-bottom: solid;
@@ -44,6 +46,7 @@ a:hover{
     float: right;
     padding-right: 2%;
 }
+
 .content-is-centered {
     position: absolute;
     top: 50%;
@@ -51,6 +54,7 @@ a:hover{
     transform: translate(-50% , -50%);
     -webkit-transform: translate(-50%, -50%);
 }
+
 .about{
     text-align: justify;
     height: 100%;
@@ -116,9 +120,11 @@ textarea{
 .contact{
     width: 100%;
 }
+
 .contact h1 {
     text-align: center;
 }
+
 input{
     margin: 5px auto;
 }
@@ -281,7 +287,6 @@ span {
         color:#FFFFFF;
         display:block;
         line-height: 5em;
-
     
     }		
     
@@ -300,5 +305,10 @@ span {
         right:1em;
         color: white;
     }
+
+    .foot{
+        top: auto;
+    }
     
 }
+
