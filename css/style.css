@@ -77,6 +77,7 @@ footer{
     padding-top: 14px;
     text-align: center;
     border-top: 1px solid #ccc;
+    min-height: 7vh;
 }
 
 .foot{
