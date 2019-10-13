@@ -54,8 +54,10 @@ body a:hover {
 }
 
 .wrapper {
-    padding-left: 400px;
+    padding-left: 300px;
 }
+
+
 
 .hero {
     display: flex;
@@ -65,9 +67,8 @@ body a:hover {
     width: 100%;
 }
 
-
 .hero_img_holder {
-    min-width: 300px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
@@ -105,7 +106,7 @@ aside {
 }
 
 .active {
-    width: 400px;
+    width: 300px;
 }
 
 .side_nav_content {
@@ -149,7 +150,9 @@ aside {
 }
 
 #about,
-#skills{
+#skills,
+#projects,
+#contact{
     margin-top: 5em;
 }
 
@@ -162,142 +165,40 @@ aside {
     border-radius: 15px;
 }  
 
-
-
-.frontend,
-.designer {
-    background: #F9F9F9;
-    box-shadow: 0px 10.5836px 31.7507px rgba(0, 0, 0, 0.25);
-    border-radius: 10.5836px;
-    text-align: center;
-    padding: 3em;
-}
-
-.frontend_content h3,
-.designer_content h3,
-.things h3,
-.skillset h3,
-.portfolio h3 {
-    color: #25557c;
-    font-weight: bold;
-}
-
-.frontend_content p,
-.designer_content p {
-    font-size: 18px;
+.project_card{
+    height: 250px;
 }
 
 
-
-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    font-size: 22px;
-    padding-top: 14px;
-    text-align: center;
-    border-top: 1px solid #ccc;
-    min-height: 7vh;
+.contact_content{
+    padding: 0 20px;
 }
 
-.foot {
-    top: 27em;
-}
-
-.forms.row {
-    display: flex;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-form {
-    margin-top: 2.2%;
-    max-height: 56vh;
-}
-
-input {
-    width: 100%;
-    font-size: 17px;
-    padding: 2%;
-    border: solid;
-    border-width: 2px;
-    border-color: purple;
-    font-family: "Raleway", sans-serif;
-}
-
-
+input,
 textarea {
     width: 100%;
-    height: 30vh;
     font-size: 17px;
     padding: 2%;
-    margin: 10px auto;
-    border: solid;
-    border-width: 2px;
-    border-color: purple;
-    font-family: "Raleway", sans-serif;
+    border: 2px solid #25557c;
+    border-radius: 15px;
+    margin-top: 15px;
 }
 
-.contact {
-    width: 100%;
+textarea{
+    min-height: 10em;
 }
 
-.contact h1 {
-    text-align: center;
+.testimonial{
+    background: url("/assets/img/image.png");
+    height: 70vh;
+    background-attachment: fixed;
+    color: #fff;
 }
 
-input {
-    margin: 5px auto;
+.testimonial h2{
+    padding: 0 35px;
 }
 
-.Send {
-    background: transparent;
-    font-size: 17px;
-    font-weight: bolder;
-    color: purple;
-    font-family: "Raleway", sans-serif;
-    border-radius: 19px;
-    width: 23%;
-    padding: 6px;
-    border: solid;
-    border-width: 2px;
-    transition: 1s ease-in-out;
-    cursor: pointer;
-}
-
-.Send:hover {
-    background-color: purple;
-    color: whitesmoke;
-}
-
-.colunms.row {
-    display: flex;
-}
-
-.c1 {
-    text-align: center;
-    height: 100vh;
-    color: #7441b7;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.avatar {
-    width: 50%;
-}
-
-.Name {
-    font-size: 40px;
-    line-height: 1px;
-}
-
-.Job {
-    font-size: 20px;
-    line-height: 1px;
-    font-weight: 100;
-}
 
 .c2 {
     background-color: mediumpurple;
