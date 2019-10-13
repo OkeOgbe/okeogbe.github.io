@@ -1,75 +1,195 @@
-body{
-   margin: 0px;
-   padding: 0px;
-   font-family: "Raleway", sans-serif;
-   height: 100vh;
-   overflow-x: hidden;
-   color: purple;
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    border: 0;
+    background-color: #25557c;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+    background-color: orange;
+    color: #ffff;
+}
+
+.orange {
+    color: orange !important;
+}
+
+@media screen and (max-width: 767px) {
+    aside {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 0 !important;
+    }
+
+    .wrapper{
+        padding-left: 0 !important;
+    }
+
+    .ml-5{
+        margin-left: 1em !important;
+    }
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body a {
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: none;
 }
 
 .wrapper {
-    padding: 0 !important;
-    
-
+    padding-left: 400px;
 }
 
-.nav-bar{
-    font-size: 21px;
-    border-bottom: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: lightgray;
-    height: 45px;
-    padding-top: 15px;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
-a{
-    text-decoration: none;
-    color: purple;
-    text-transform:capitalize !important;
+
+.hero_img_holder {
+    min-width: 300px;
+    margin: 0 auto;
 }
 
-a:hover{
-    color: plum;
-}
-
-.link1{
-    padding-left: 15px;
-    padding-top: 20px;
-}
-
-.link2{
-    float: right;
-    padding-right: 2%;
-}
-
-.link3{
-    float: right;
-    padding-right: 2%;
-}
-
-.content-is-centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    -webkit-transform: translate(-50%, -50%);
-}
-
-.about{
-    text-align: justify;
-    height: 100%;
+.hero_text_holder {
+    font-family: "Raleway", sans-serif !important;
+    color: #25557c;
     text-align: center;
-    padding: 1em;
-   
 }
 
-.about .about-content {
-    text-align: justify;
-    margin-left: -2px;
+.hero_text_holder span {
+    cursor: auto !important;
+}
+
+.angle_down {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 40px;
+    margin-top: 2em;
+    animation-iteration-count: infinite;
 }
 
 
-footer{
+
+
+/*side navigation*/
+aside {
+    position: fixed;
+}
+
+.side_nav {
+    height: 100vh;
+    width: 0;
+    background-color: #25557c;
+}
+
+.active {
+    width: 400px;
+}
+
+.side_nav_content {
+    padding: 35px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    justify-content: center;
+}
+
+.side_nav_content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side_nav_content ul li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.side_nav_content ul li a {
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.side_nav_content ul li a:hover,
+.side_nav_content ul li a:focus {
+    color: orange;
+}
+
+.socials_holder {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+
+.socials_holder a {
+    color: orange;
+}
+
+#about,
+#skills{
+    margin-top: 5em;
+}
+
+.progress_bar{
+    height: 10px;
+    background: #25557c;
+    width: 0%;
+    transition: all 4s ease;
+    transition-delay: 1s;
+    border-radius: 15px;
+}  
+
+
+
+.frontend,
+.designer {
+    background: #F9F9F9;
+    box-shadow: 0px 10.5836px 31.7507px rgba(0, 0, 0, 0.25);
+    border-radius: 10.5836px;
+    text-align: center;
+    padding: 3em;
+}
+
+.frontend_content h3,
+.designer_content h3,
+.things h3,
+.skillset h3,
+.portfolio h3 {
+    color: #25557c;
+    font-weight: bold;
+}
+
+.frontend_content p,
+.designer_content p {
+    font-size: 18px;
+}
+
+
+
+footer {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -80,22 +200,22 @@ footer{
     min-height: 7vh;
 }
 
-.foot{
-   top: 27em;
+.foot {
+    top: 27em;
 }
 
-.forms.row{
+.forms.row {
     display: flex;
     margin-left: 4%;
     margin-right: 4%;
 }
 
-form{
+form {
     margin-top: 2.2%;
     max-height: 56vh;
 }
 
-input{
+input {
     width: 100%;
     font-size: 17px;
     padding: 2%;
@@ -105,8 +225,8 @@ input{
     font-family: "Raleway", sans-serif;
 }
 
-  
-textarea{
+
+textarea {
     width: 100%;
     height: 30vh;
     font-size: 17px;
@@ -118,7 +238,7 @@ textarea{
     font-family: "Raleway", sans-serif;
 }
 
-.contact{
+.contact {
     width: 100%;
 }
 
@@ -126,11 +246,11 @@ textarea{
     text-align: center;
 }
 
-input{
+input {
     margin: 5px auto;
 }
 
-.Send{
+.Send {
     background: transparent;
     font-size: 17px;
     font-weight: bolder;
@@ -145,41 +265,41 @@ input{
     cursor: pointer;
 }
 
-.Send:hover{
+.Send:hover {
     background-color: purple;
     color: whitesmoke;
 }
 
-.colunms.row{
+.colunms.row {
     display: flex;
 }
 
-.c1{
+.c1 {
     text-align: center;
     height: 100vh;
     color: #7441b7;
     font-weight: bolder;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.avatar{
-    width: 50%;    
+.avatar {
+    width: 50%;
 }
 
-.Name{
+.Name {
     font-size: 40px;
     line-height: 1px;
 }
 
-.Job{
+.Job {
     font-size: 20px;
     line-height: 1px;
     font-weight: 100;
 }
 
-.c2{
+.c2 {
     background-color: mediumpurple;
     display: flex;
     justify-content: center;
@@ -187,129 +307,125 @@ input{
     height: 100vh;
 }
 
-.c2 > .link {
+.c2>.link {
     color: antiquewhite;
     padding: 16px 14px;
     font-size: 18px;
 }
 
 .menu {
-	height:100vh;
-	background: mediumpurple;
-	width: 0;
-	text-align:center;
-	position:fixed;
-	right: -20%;
+    height: 100vh;
+    background: mediumpurple;
+    width: 0;
+    text-align: center;
+    position: fixed;
+    right: -20%;
     z-index: 999999999999;
     -webkit-transition: .6s linear;
     transition: .6s linear;
 }
-  
-.menu a{
-	color:#FFFFFF;
-	display:block;
-	line-height:50px;
-}		
 
-.active {
-	width: 50%;
-	right:0;
+.menu a {
+    color: #FFFFFF;
+    display: block;
+    line-height: 50px;
 }
 
+
 span {
-	cursor:pointer;
+    cursor: pointer;
 }
 
 #close {
-	position:absolute;
-	top:1em;
-    right:1em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 
 #toggle {
-	cursor:pointer;
-    float:right;
+    cursor: pointer;
+    float: right;
     padding-right: 4%;
     display: none;
 }
+
 /*Media Queries*/
 
 @media screen and (max-width: 600px) {
-    .c1{
+    .c1 {
         height: 50vh;
     }
 
-    .c2{
+    .c2 {
         height: 50vh;
     }
 
-    .avatar{
+    .avatar {
         width: 50%;
     }
 
-    .row{
+    .row {
         width: 100%;
-        margin:0 !important;
+        margin: 0 !important;
         overflow: hidden;
     }
 
     .about .about-content {
-    text-align: center;
+        text-align: center;
     }
-    
+
     #toggle {
         display: block;
     }
 
-    .link2{
+    .link2 {
         display: none;
     }
 
-    .link3{
+    .link3 {
         display: none;
     }
 
     .menu {
-        height:100vh;
+        height: 100vh;
         background: mediumpurple;
         width: 0;
-        text-align:center;
-        position:fixed;
+        text-align: center;
+        position: fixed;
         right: -20%;
         z-index: 999999999999;
-       -webkit-transition: .6s linear;
-        transition: .6s linear; 
+        -webkit-transition: .6s linear;
+        transition: .6s linear;
         top: 0;
         overflow: auto;
-     
+
     }
-      
-    .menu a{
-        color:#FFFFFF;
-        display:block;
+
+    .menu a {
+        color: #FFFFFF;
+        display: block;
         line-height: 5em;
-    
-    }		
-    
+
+    }
+
     .active {
         width: 50%;
-        right:0;
+        right: 0;
     }
-    
+
     span {
-        cursor:pointer;
+        cursor: pointer;
     }
-    
+
     #close {
-        position:absolute;
-        top:1em;
-        right:1em;
+        position: absolute;
+        top: 1em;
+        right: 1em;
         color: white;
     }
 
-    .foot{
+    .foot {
         top: auto;
     }
-    
-}
 
+}

@@ -1,17 +1,20 @@
-let side = document.getElementById("men")
-document.getElementById("toggle").addEventListener("click", function(){
-	side.classList.toggle("active")
-});
-document.getElementById("close").addEventListener("click", function(){
-	side.classList.toggle("active")
-});
-window.onclick = function(e) {
-	if
-	(e.target.closest("#toggle") 
-	|| e.target.closest("#men"))
-	{return}
-	else {
-		side.classList.remove("active");
-	}
+let html = document.getElementById("htmlProgress");
+let css =  document.getElementById("cssProgress");
+let js = document.getElementById("jsProgress");
+let figma = document.getElementById("figmaProgress");
 
-};
+setTimeout(
+    function(){
+        html.style.width = "90%";
+        html.style.color = "#25557c";
+
+        css.style.width = "85%";
+        css.style.color = "#25557c";
+        
+        js.style.width = "60%";
+        js.style.color = "#25557c";
+
+        figma.style.width = "50%";
+        figma.style.color = "#25557c";
+    },1000
+);

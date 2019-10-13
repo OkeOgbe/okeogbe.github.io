@@ -1,42 +1,122 @@
 <!DOCTYPE html>
-   <html>
-       <head>    
-         <title>Daniel Ogbe : Home</title>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <!--custom stylesheet-->
-         <link rel="stylesheet" href="/css/style.css">
-         
-         <!--fontawesome-->
-         <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
-  
-         <!--googlefonts-->
-         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  
-         <!--bootstrap--> 
-         <link href="/assets/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" rel="stylesheet">
-        
-         <!--animate.css-->
-         <link rel="stylesheet" href="/assets/animate.css">
-       </head>
-       <body>
-           <div class="row">
-                <div class="col-md-6 wrapper">
-                    <div class="c1">
-                        <div class="animated bounceInUp delay-0s">
-                          <img class="avatar" src="\assets\avataaars.png">
-                          <p class="Name">Ogbe Daniel</p>
-                          <p class="Job">Front End Developer</p> 
-                        </div>
-                    </div>    
-                </div>
-        
-                <div class="col-md-6 wrapper" style="background-color: mediumpurple;">
-                    <div class="c2">
-                        <a  class="link animated flipInX delay-0s" href="about.html">about</a>
-                        <a class="link animated flipInX delay-0s" href="contact.html">contact</a>  
-                   </div>      
+<html>
+
+<head>
+    <title>Daniel Ogbe : Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+
+    <!--googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway&display=swap" rel="stylesheet">
+
+    <!--bootstrap-->
+    <link href="/assets/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!--animate css-->
+    <link rel="stylesheet" href="assets/animate.css">
+
+    <link rel="stylesheet" href="assets/Hover/Hover-master/css/hover-min.css">
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- side  navigation -->
+    <aside>
+        <div class="side_nav active">
+            <div class="side_nav_content">
+
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a href="#skills">My Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="socials_holder">
+                <a href="https://www.instagram.com/dhar_niell/?hl=en" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/OkeOgbe" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="hero wrapper">
+        <div class="hero_content">
+            <div class="hero_img_holder">
+                <img src="assets/img/avataaars.png" class="w-100">
+            </div>
+            <div class="hero_text_holder mt-5">
+                <h2>Hi, I'm Ogbe Daniel<br>
+                    I'm a <span id="Job" class="job">Frontend Developer</span></h2>
+            </div>
+            <a href="#about" class="angle_down animated bounce">
+                <i class="fas fa-angle-double-down"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="About wrapper ml-5" id="about">
+        <h1>ABOUT ME✌️</h1>
+        <p>Things you'd like to know</p>
+
+        <div class="about_content">
+            <p>Hi! My name is <span class="orange">Ogbe Daniel</span>. I am a Web Developer, and I'm very passionate and dedicated to my work.
+                With 2 years experience as a Web developer, I believe I have acquired the skills and knowledge
+                necessary to make your project a success. I enjoy every step of the design process, from discussion and
+                collaboration to concept and execution, but I find the most satisfaction in seeing the finished product
+                do everything for you that it was created to do.</p>
+        </div>
+        <a href="#contact" class="btn hvr-bounce-in mt-2">Send Message </a>
+    </div>
+
+    <div id="skills" class="wrapper ml-5" >
+     
+                <h2 class="mb-4">Some of my Abilities</h2>
+           
+                <div class="progress_holder mt-2">
+                    <div class="progress_bar" id="htmlProgress"></div>
+                    <span>HTML5   90%</span>
                 </div> 
-           </div>
-       </body>
-   </html>
+                <div class="progress_holder mt-2">
+                    <div class="progress_bar" id="cssProgress"></div>
+                    <span>CSS   85%</span>
+                </div>
+                <div class="progress_holder mt-2">
+                    <div class="progress_bar" id="jsProgress"></div>
+                    <span>Javascript   60%</span>
+                </div>
+                <div class="progress_holder mt-2">
+                    <div class="progress_bar" id="figmaProgress"></div>
+                    <span>Figma   50% </span>
+                </div>
+                
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
