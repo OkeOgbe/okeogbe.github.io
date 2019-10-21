@@ -16,28 +16,19 @@ setTimeout(
 
         figma.style.width = "50%";
         figma.style.color = "#25557c";
-    },1000
+    },2000
 );
 
-$( document ).ready( function( ) {
-	$( '.owl-carousel' ).owlCarousel( {
-		loop: true,
-		margin: 0,
-		nav: false,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		animateOut: 'fadeOut',
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 3
-			},
-			600: {
-				items: 2
-			},
-			1000: {
-				items: 1
-			}
-		}
-	} )
-} );
+var myVar;
+
+function myLoader() {
+  myVar = setTimeout(showPage, 5000);
+}
+  
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
+
+window.onload(myLoader());

@@ -20,30 +20,20 @@ html {
     color: orange !important;
 }
 
-@media screen and (max-width: 767px) {
-    aside {
-        display: none;
-    }
-
-    .hero {
-        padding-left: 0 !important;
-    }
-
-    .wrapper{
-        padding-left: 0 !important;
-    }
-
-    .ml-5{
-        margin-left: 1em !important;
-    }
+.blue{
+   color:  #25557c !important;
 }
-
 
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Nunito', sans-serif;
 }
+
+#body{
+    display: none;
+}
+
 
 body a {
     text-decoration: none;
@@ -56,6 +46,37 @@ body a:hover {
 .wrapper {
     padding-left: 300px;
 }
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border-top-color: orange;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        border-top-color: #3498db;
+    }
+}
+
 
 
 
@@ -152,25 +173,26 @@ aside {
 #about,
 #skills,
 #projects,
-#contact{
+#contact {
     margin-top: 5em;
 }
 
-.progress_bar{
+.progress_bar {
     height: 10px;
     background: #25557c;
     width: 0%;
     transition: all 4s ease;
     transition-delay: 1s;
     border-radius: 15px;
-}  
+}
 
-.project_card{
+
+.project_card {
     height: 250px;
 }
 
 
-.contact_content{
+.contact_content {
     padding: 0 20px;
 }
 
@@ -184,149 +206,82 @@ textarea {
     margin-top: 15px;
 }
 
-textarea{
+#contact {
+    padding-bottom: 20px;
+}
+
+textarea {
     min-height: 10em;
 }
 
-.testimonial{
+.testimonial {
     background: url("/assets/img/image.png");
     height: 70vh;
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: #fff;
 }
 
-.testimonial h2{
+.testimonial_content_holder{
+    display: flex;
+    align-items: center;
+    min-height: 50vh
+}
+
+.testimonial_content{
     padding: 0 35px;
 }
 
 
-.c2 {
-    background-color: mediumpurple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-.c2>.link {
-    color: antiquewhite;
-    padding: 16px 14px;
-    font-size: 18px;
-}
-
-.menu {
-    height: 100vh;
-    background: mediumpurple;
-    width: 0;
+.project_card {
     text-align: center;
-    position: fixed;
-    right: -20%;
-    z-index: 999999999999;
-    -webkit-transition: .6s linear;
-    transition: .6s linear;
+    background-color: #25557c;
+    min-height: 300px;
+    border-radius: 30px
 }
 
-.menu a {
-    color: #FFFFFF;
-    display: block;
-    line-height: 50px;
+.project_card_content {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    color: #f5f5f5 !important;
+    padding: 2.5em;
+
 }
 
-
-span {
-    cursor: pointer;
-}
-
-#close {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-}
-
-#toggle {
-    cursor: pointer;
-    float: right;
-    padding-right: 4%;
-    display: none;
-}
 
 /*Media Queries*/
-
-@media screen and (max-width: 600px) {
-    .c1 {
-        height: 50vh;
-    }
-
-    .c2 {
-        height: 50vh;
-    }
-
-    .avatar {
-        width: 50%;
-    }
-
-    .row {
-        width: 100%;
-        margin: 0 !important;
-        overflow: hidden;
-    }
-
-    .about .about-content {
-        text-align: center;
-    }
-
-    #toggle {
-        display: block;
-    }
-
-    .link2 {
+@media screen and (max-width: 767px) {
+    aside {
         display: none;
     }
 
-    .link3 {
-        display: none;
+    .hero {
+        padding-left: 0 !important;
     }
 
-    .menu {
-        height: 100vh;
-        background: mediumpurple;
-        width: 0;
-        text-align: center;
-        position: fixed;
-        right: -20%;
-        z-index: 999999999999;
-        -webkit-transition: .6s linear;
-        transition: .6s linear;
-        top: 0;
-        overflow: auto;
-
+    .wrapper {
+        padding-left: 0 !important;
     }
 
-    .menu a {
-        color: #FFFFFF;
-        display: block;
-        line-height: 5em;
-
+    .ml-5 {
+        margin-left: 1em !important;
     }
 
-    .active {
-        width: 50%;
-        right: 0;
+    .hero_img_holder {
+        max-width: 250px;
     }
 
-    span {
-        cursor: pointer;
+
+    .contact_content {
+        padding: 0;
+        padding-right: 5%;
     }
 
-    #close {
-        position: absolute;
-        top: 1em;
-        right: 1em;
-        color: white;
-    }
-
-    .foot {
-        top: auto;
+    input {
+        padding: 10px;
     }
 
 }

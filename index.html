@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
 
     <!--googlefonts-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
 
     <!--bootstrap-->
     <link href="/assets/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
@@ -21,11 +21,14 @@
 
     <!--hover effects-->
     <link rel="stylesheet" href="assets/Hover/Hover-master/css/hover-min.css">
-   
+
 
     <!--custom stylesheet-->
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
+<!--Pre loader-->
+<div id="loader"></div>
 
 <body>
     <!-- side  navigation -->
@@ -66,6 +69,8 @@
         </div>
     </aside>
 
+
+    <div id="body">
     <div class="hero wrapper">
         <div class="hero_content">
             <div class="hero_img_holder">
@@ -82,7 +87,7 @@
     </div>
 
     <div class="About wrapper ml-5" id="about">
-        <h1>ABOUT ME✌️</h1>
+        <h1> <span class="orange">#</span>ABOUT ME✌️</h1>
         <p>Things you'd like to know</p>
 
         <div class="about_content">
@@ -98,7 +103,7 @@
 
     <div id="skills" class="wrapper ml-5">
 
-        <h2 class="mb-4">Some of my Abilities💪</h2>
+        <h2 class="mb-4"><span class="blue">#</span>Some of my Abilities💪</h2>
 
         <div class="progress_holder mt-2">
             <div class="progress_bar" id="htmlProgress"></div>
@@ -120,38 +125,65 @@
     </div>
 
 
-    <!-- <div class="wrapper ml-5" id="projects">
-        <h2 class="mb-4">Some of my Projects</h2>
+    <div class="wrapper ml-5" id="projects">
+        <h2 class="mb-4"><span class="orange">#</span>Some of my Projects</h2>
         <p>Some of my beautifully coded projects</p>
 
-        <div class="carousel-wrap">
-            <div class="owl-carousel">
-                <div class="carousel-item">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
                     <div class="project_card">
-                        <h3>Westkoast Official Website</h3>
-                        <p>I worked with a great team of designers to bring the offcial website of the westkoast
-                            community to life</p>
-                         <a href="westkoast.netlify.com" class="btn hvr-bounce-in">Visit Site</a>   
+                        <div class="project_card_content">
+                            <div class="">
+                                <h3>Westkoast Official Website</h3>
+                                <p>I was part of the awesome team that was responsible for bringing the design to life
+                                </p>
+                                <a href="https:://westkoast.netlify.com" target="_blank" class="btn hvr-bounce-in">Visit
+                                    Site</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="carousel-item">
+                <div class="col-md-4">
                     <div class="project_card">
-                        <h3>Westkoast Official Website</h3>
-                        <p>I worked with a great team of designers to bring the offcial website of the westkoast
-                            community to life</p>
-                         <a href="westkoast.netlify.com" class="btn hvr-bounce-in">Visit Site</a>   
+                        <div class="project_card_content">
+                            <div class="">
+                                <h3>Westkoast Official Website</h3>
+                                <p>I was part of the awesome team that was responsible for bringing the design to life
+                                </p>
+                                <a href="https:://westkoast.netlify.com" class="btn hvr-bounce-in">Visit Site</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="project_card">
+                        <div class="project_card_content">
+                            <div class="">
+                                <h3>Westkoast Official Website</h3>
+                                <p>I was part of the awesome team that was responsible for bringing the design to life
+                                </p>
+                                <a href="https:://westkoast.netlify.com" class="btn hvr-bounce-in">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https:://westkoast.netlify.com" target="_blank" class="btn hvr-bounce-in mt-2">View more</a>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="wrapper testimonial mt-5">
-        <div class="testimonial_content">
-                
+        <div class="testimonial_content_holder">
+            <div class="testimonial_content">
+            <h3>People say nice things about me</h3>
+            <h3>"</h3>
+            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi libero, sint vel harum veritatis
+                rerum error ratione illum qui quis, minus similique! Ipsum optio qui delectus molestiae harum eveniet.
+            </p>
+            </div>
         </div>
-        
+
     </div>
 
     <div class="wrapper ml-5" id="contact">
@@ -160,22 +192,21 @@
             <form action="https://usebasin.com/f/3d0a6e5da0dc" method="POST">
                 <div class="row">
                     <div class="col-md-6">
-                <input type="text" placeholder="Full name"required></input>
-                <input type="email" placeholder="Email" required></input>
-                <input type="tel" placeholder="Phone" required></input>
-            </div>
-            <div class="col-md-6">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit" class="btn hvr-bounce-in mt-2">Send Message </a>
-            </div>
+                        <input type="text" placeholder="Full name" required></input>
+                        <input type="email" placeholder="Email" required></input>
+                        <input type="tel" placeholder="Phone" required></input>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit" class="btn hvr-bounce-in mt-2">Send Message </a>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
+    </div>
 
-    
 </body>
 <script src="js/script.js"></script>
-<script src="assets/jquery/jquery.min.js"></script>
 
 </html>
