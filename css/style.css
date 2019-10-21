@@ -2,17 +2,24 @@ html {
     scroll-behavior: smooth;
 }
 
-.btn {
+.btn,
+.btn_alt {
     border: 0;
     background-color: #25557c;
     color: #fff;
     font-weight: bold;
     transition: all 0.3s ease;
+    padding: 5px;
 }
 
 
 .btn:hover {
     background-color: orange;
+    color: #ffff;
+}
+
+.btn_alt:hover {
+    background-color: red;
     color: #ffff;
 }
 
@@ -24,10 +31,17 @@ html {
    color:  #25557c !important;
 }
 
+h1,
+h2,
+h3{
+    font-family: 'Josefin Sans', sans-serif !important;
+
+}
+
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #body{
@@ -44,7 +58,7 @@ body a:hover {
 }
 
 .wrapper {
-    padding-left: 300px;
+    padding-left: 300px; 
 }
 
 #loader {
@@ -52,12 +66,12 @@ body a:hover {
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
+    border: 10px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 10px solid #3498db;
     animation: spin 2s linear infinite;
 }
 
@@ -186,12 +200,6 @@ aside {
     border-radius: 15px;
 }
 
-
-.project_card {
-    height: 250px;
-}
-
-
 .contact_content {
     padding: 0 20px;
 }
@@ -216,7 +224,7 @@ textarea {
 
 .testimonial {
     background: url("/assets/img/image.png");
-    height: 70vh;
+    min-height: 70vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -230,16 +238,44 @@ textarea {
 }
 
 .testimonial_content{
-    padding: 0 35px;
+    padding: 25px 35px;
 }
 
+.testimonial_content p{
+    text-align: center;
+    padding: 0 5em;
+}
+
+.quote{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Catamaran', sans-serif !important;
+}
+
+.testimonial_img_holder{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.testimonial_img_holder img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testifier{
+    text-align: center !important;
+}
 
 
 .project_card {
     text-align: center;
     background-color: #25557c;
     min-height: 300px;
-    border-radius: 30px
+    border-radius: 30px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.65);
 }
 
 .project_card_content {
@@ -251,6 +287,9 @@ textarea {
 
 }
 
+.view_more{
+    margin: 20px;
+}
 
 /*Media Queries*/
 @media screen and (max-width: 767px) {
@@ -283,5 +322,18 @@ textarea {
     input {
         padding: 10px;
     }
+
+    .project_card{
+        margin-top: 2em;
+    }
+
+
+    .testimonial_content{
+        padding: 12px 12px;
+    }
+    .testimonial_content p{
+        padding: 0;
+    }
+
 
 }
