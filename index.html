@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!--fontawesome-->
     <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
 
@@ -21,7 +20,6 @@
 
     <!--hover effects-->
     <link rel="stylesheet" href="assets/Hover/Hover-master/css/hover-min.css">
-
 
     <!--custom stylesheet-->
     <link rel="stylesheet" href="/css/style.css">
@@ -104,6 +102,52 @@
             <a href="#contact" class="btn hvr-bounce-in mt-2">Send Message </a>
         </div>
 
+        <div class="role wrapper ml-5">
+            <h2 class="mb-4"><span class="blue">#</span>What I do?</h2>
+            <p>Here is what i do as a frontend developer </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="role_content_holder">
+                            <div class="role_content">
+                                <div class="">
+                                    <i class="fab fa-figma"></i>
+                                    <h4 class="mt-4">UI/UX Designer</h4>
+                                    <p class="mt-2">I design awesome wireframes and mockups for websites and mobile
+                                        applications</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="role_content_holder">
+                            <div class="role_content">
+                                <div class="">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h4 class="mt-4">Web Development</h4>
+                                    <p class="mt-2">I design and develope user interfaces for websites and web apps</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="role_content_holder">
+                            <div class="role_content">
+                                <div class="">
+                                    <i class="fas fa-tools"></i>
+                                    <h4 class="mt-4">Web Maintenance</h4>
+                                    <p class="mt-2">I always ensure that I maintain and update my projects with the
+                                        latest web technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
         <div id="skills" class="wrapper ml-5">
 
             <h2 class="mb-4"><span class="blue">#</span>MyStack💪</h2>
@@ -138,13 +182,15 @@
                         <div class="project_card">
                             <div class="project_card_content">
                                 <div class="">
-                                    <h3>Westkoast Official Website</h3>
+                                    <div class="wkt logo_container">
+                                        <img src="assets/img/westkoast logo.png" class="w-100" alt="">
+                                    </div>
+                                    <h3 class="mt-4">Westkoast Official Website</h3>
                                     <p>I was part of the awesome team that was responsible for bringing the design to
                                         life
                                     </p>
-                                    <a href="https:://westkoast.netlify.com" target="_blank"
-                                        class="btn hvr-bounce-in">Visit
-                                        Site</a>
+                                    <a href="https://westkoast.netlify.com/" target="_blank"
+                                        class="btn hvr-bounce-in">Visit Site</a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +199,10 @@
                         <div class="project_card">
                             <div class="project_card_content">
                                 <div class="">
-                                    <h3>d-buddy</h3>
+                                    <div class="d_buddy logo_container">
+                                        <img src="assets/img/d-buddy img.svg" class="w-100" alt="">
+                                    </div>
+                                    <h3 class="mt-4">d-buddy</h3>
                                     <p>A simple landing page for a delivery firm in my local area.
                                     </p>
                                     <a href="#" class="btn_alt hvr-bounce-in">Site Unavailable</a>
@@ -165,17 +214,17 @@
                         <div class="project_card">
                             <div class="project_card_content">
                                 <div class="">
-                                    <h3>Westkoast Official Website</h3>
-                                    <p>I was part of the awesome team that was responsible for bringing the design to
-                                        life
+                                    <div class="toonix logo_container">
+                                        <img src="assets/img/toonix img.svg" class="w-100" alt="">
+                                    </div>
+                                    <h3 class="mt-4">Toonix</h3>
+                                    <p>A simple landing page for a music streaming application.
                                     </p>
-                                    <a href="https:://westkoast.netlify.com" class="btn hvr-bounce-in">Visit Site</a>
+                                    <a href="https://toonix.netlify.com/" target="_blank" class="btn hvr-bounce-in">Visit Site</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="https:://westkoast.netlify.com" target="_blank" class="btn hvr-bounce-in mt-2 view_more">View
-                        more</a>
                 </div>
             </div>
         </div>
@@ -188,7 +237,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi libero, sint vel harum
                         veritatis
                         rerum error ratione illum qui quis, minus similique! Ipsum optio qui delectus molestiae harum
-                        eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi libero, sint vel harum
+                        eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi libero, sint vel
+                        harum
                         veritatis
                         rerum error ratione illum qui quis, minus similique! Ipsum optio qui delectus molestiae harum
                         eveniet.
@@ -219,13 +269,14 @@
                         </div>
                         <div class="col-md-6">
                             <textarea placeholder="Message"></textarea>
-                            <button type="submit" class="btn hvr-bounce-in mt-2">Send Message </a>
+                            <button type="submit" class="send btn hvr-bounce-in mt-2">Send Message </a>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <button id="topBtn" class="scroll_top" title="Let's get higher"><i class="fas fa-arrow-up"></i></button>
 </body>
 <script src="js/script.js"></script>
 

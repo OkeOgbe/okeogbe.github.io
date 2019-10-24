@@ -27,13 +27,14 @@ html {
     color: orange !important;
 }
 
-.blue{
-   color:  #25557c !important;
+.blue {
+    color: #25557c !important;
 }
 
 h1,
 h2,
-h3{
+h3,
+h4 {
     font-family: 'Josefin Sans', sans-serif !important;
 
 }
@@ -44,7 +45,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#body{
+#body {
     display: none;
 }
 
@@ -58,18 +59,19 @@ body a:hover {
 }
 
 .wrapper {
-    padding-left: 300px; 
+    padding-left: 300px;
 }
 
+/*loader*/
 #loader {
     position: absolute;
-    left: 50%;
+    left: 57%;
     top: 50%;
     z-index: 1;
     width: 100px;
     height: 100px;
     margin: -75px 0 0 -75px;
-    border: 10px solid #f3f3f3;
+    border: 10px solid #fff;
     border-radius: 50%;
     border-top: 10px solid #3498db;
     animation: spin 2s linear infinite;
@@ -90,44 +92,6 @@ body a:hover {
         border-top-color: #3498db;
     }
 }
-
-
-
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-}
-
-.hero_img_holder {
-    max-width: 350px;
-    margin: 0 auto;
-}
-
-.hero_text_holder {
-    font-family: "Raleway", sans-serif !important;
-    color: #25557c;
-    text-align: center;
-}
-
-.hero_text_holder span {
-    cursor: auto !important;
-}
-
-.angle_down {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    font-size: 40px;
-    margin-top: 2em;
-    animation-iteration-count: infinite;
-}
-
-
-
 
 /*side navigation*/
 aside {
@@ -184,11 +148,49 @@ aside {
     color: orange;
 }
 
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero_img_holder {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.hero_text_holder {
+    font-family: "Raleway", sans-serif !important;
+    color: #25557c;
+    text-align: center;
+}
+
+.hero_text_holder span {
+    cursor: auto !important;
+}
+
+.angle_down {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 40px;
+    margin-top: 2em;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
 #about,
 #skills,
-#projects,
-#contact {
+#contact,
+.role {
     margin-top: 5em;
+    min-height: 50vh;
 }
 
 .progress_bar {
@@ -231,65 +233,118 @@ textarea {
     color: #fff;
 }
 
-.testimonial_content_holder{
+.testimonial_content_holder {
     display: flex;
     align-items: center;
     min-height: 50vh
 }
 
-.testimonial_content{
+.testimonial_content {
     padding: 25px 35px;
 }
 
-.testimonial_content p{
+.testimonial_content p {
     text-align: center;
     padding: 0 5em;
 }
 
-.quote{
+.quote {
     font-size: 50px;
     display: flex;
     justify-content: center;
     font-family: 'Catamaran', sans-serif !important;
 }
 
-.testimonial_img_holder{
+.testimonial_img_holder {
     display: flex;
     justify-content: center;
     margin-top: 2em;
 }
 
-.testimonial_img_holder img{
+.testimonial_img_holder img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-.testifier{
+.testifier {
     text-align: center !important;
 }
 
 
-.project_card {
+.role_content_holder {
     text-align: center;
-    background-color: #25557c;
     min-height: 300px;
     border-radius: 30px;
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.65);
 }
 
-.project_card_content {
+.role_content {
     display: flex;
-    align-items: center;
+    justify-content: center;
     min-height: 300px;
-    color: #f5f5f5 !important;
     padding: 2.5em;
-
+    line-height: 1.7em;
 }
 
-.view_more{
-    margin: 20px;
+.fa-figma,
+.fa-laptop-code,
+.fa-tools {
+    font-size: 40px;
+    color: orange;
 }
+
+
+
+.scroll_top{
+    display: none; 
+    position: fixed; 
+    bottom: 30px;
+    left: 95%;
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    color: orange; 
+    cursor: pointer; 
+    padding: 15px; 
+    box-shadow: 13px 4px 27px rgba(0, 0, 0, 0.55);
+    font-size: 18px; 
+    background-color: #25557c;
+    transition: all 0.6s ease-in;
+}
+
+.scroll_top:hover{
+    background-color: orange;
+    color: #25557c;
+}
+
+.wkt{
+    background-color: #131524;
+}
+
+.d_buddy {
+    background-color: #4285f4;
+}
+
+.logo_container{
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 260px;
+    border-radius: 30px;
+    padding: 2em;
+    transition: all 1s ease;
+}
+
+.logo_container:hover{
+    padding: 0;
+}
+
+.project_card{
+    text-align: center;
+}
+
+
 
 /*Media Queries*/
 @media screen and (max-width: 767px) {
@@ -323,16 +378,22 @@ textarea {
         padding: 10px;
     }
 
+    .role_content_holder,
     .project_card{
         margin-top: 2em;
     }
 
 
-    .testimonial_content{
+    .testimonial_content {
         padding: 12px 12px;
     }
-    .testimonial_content p{
+
+    .testimonial_content p {
         padding: 0;
+    }
+
+    .send{
+        width: 100%;
     }
 
 
