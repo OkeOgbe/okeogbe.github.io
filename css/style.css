@@ -7,10 +7,16 @@ html {
     border: 0;
     background-color: #25557c;
     color: #fff;
-    font-weight: bold;
     transition: all 0.3s ease;
-    padding: 5px;
+    padding: 11px;
+    font-size: 14px;
 }
+
+.small{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
 
 
 .btn:hover {
@@ -68,13 +74,13 @@ body a:hover {
     left: 57%;
     top: 50%;
     z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin: -75px 0 0 -75px;
-    border: 10px solid #fff;
+    width: 50px;
+    height: 50px;
+    margin:-75px 0 0 -50px;
+    border: 6px solid #fff;
     border-radius: 50%;
-    border-top: 10px solid #3498db;
-    animation: spin 2s linear infinite;
+    border-top: 6px solid #3498db;
+    animation: spin 0.9s linear infinite;
 }
 
 @keyframes spin {
@@ -193,6 +199,10 @@ aside {
     min-height: 50vh;
 }
 
+.about_content{
+    padding-right: 17px;
+}
+
 .progress_bar {
     height: 10px;
     background: #25557c;
@@ -225,8 +235,8 @@ textarea {
 }
 
 .testimonial {
-    background: url("/assets/img/image.png");
-    min-height: 70vh;
+    background: url("/assets/img/wallpaper.jpg");
+    min-height: 60vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -276,7 +286,7 @@ textarea {
     text-align: center;
     min-height: 300px;
     border-radius: 30px;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.55);
 }
 
 .role_content {
@@ -329,8 +339,7 @@ textarea {
 .logo_container{
     display: flex;
     justify-content: center;
-    min-width: 300px;
-    min-height: 260px;
+    width: 100%;
     border-radius: 30px;
     padding: 2em;
     transition: all 1s ease;
@@ -342,6 +351,19 @@ textarea {
 
 .project_card{
     text-align: center;
+}
+
+footer{
+    display: none;
+    background-color: #f5f5f5;
+}
+
+.footer_text{
+    text-align: center;
+}
+
+footer .socials_holder{
+    font-size: 25px;
 }
 
 
@@ -394,6 +416,10 @@ textarea {
 
     .send{
         width: 100%;
+    }
+
+    footer{
+        display: block;
     }
 
 
