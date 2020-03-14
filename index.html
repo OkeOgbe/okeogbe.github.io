@@ -6,14 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--fontawesome-->
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
-
     <!--googlefonts-->
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Josefin+Sans|Open+Sans&display=swap" rel="stylesheet">
 
     <!--bootstrap-->
     <link href="/assets/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/themify-icons-font/themify-icons/themify-icons.css">
 
     <!--animate css-->
     <link rel="stylesheet" href="assets/animate.css">
@@ -25,280 +24,194 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<!--Pre loader-->
-<div id="loader"></div>
+
 
 <body>
-    <!-- side  navigation -->
-    <aside>
-        <div class="side_nav active">
-            <div class="side_nav_content">
 
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About me</a>
-                    </li>
-                    <li>
-                        <a href="#skills">My Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="socials_holder">
-                <a href="https://www.instagram.com/dhar_niell/?hl=en" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/OkeOgbe" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-    </aside>
-
-
-    <div id="body">
-        <div class="hero wrapper">
-            <div class="side_socials_holder">
-                <div class="mt-2">
-                    <a href="https://www.instagram.com/dhar_niell/?hl=en" target="_blank">
-                        <i class="fab fa-instagram orange"></i>
-                    </a>
-                </div>
-                <div class="mt-2">
-                    <a href="https://github.com/OkeOgbe" target="_blank">
-                        <i class="fab fa-github orange"></i>
-                    </a>
-                </div>
-                <div class="mt-2">
-                    <a href="" target="_blank">
-                        <i class="fab fa-twitter orange"></i>
-                    </a>
+    <div class="bg_circle"></div>
+    <section class="hero section_padding pb-5">
+        <div class="row reverse-column-order">
+            <div class="col-md-6">
+                <div class="hero_text_holder">
+                    <div class="hero_text_content">
+                        <h1>Hello,<br> I'm <span class="text_has_color">Ogbe Daniel.<span class="dot">.</span></span></h1>
+                        <p class="mt-3">I am a Frontend Developer</p>
+                    </div>
                 </div>
             </div>
-            <div class="hero_content">
+            <div class="col-md-6">
                 <div class="hero_img_holder">
-                    <img src="assets/img/avataaars.png" class="w-100">
-                </div>
-                <div class="hero_text_holder mt-5">
-                    <h2>Hi, I'm Ogbe Daniel<br>
-                        I'm a <span id="Job" class="job">Frontend Developer</span></h2>
-                </div>
-                <a href="#about" class="angle_down animated bounce">
-                    <i class="fas fa-angle-double-down"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="About wrapper ml-5" id="about">
-            <h1> <span class="orange">#</span>ABOUT ME✌️</h1>
-            <p>Things you'd like to know</p>
-
-            <div class="about_content">
-                <p>Hi! My name is <span class="orange">Ogbe Daniel</span>. I am a Web Developer, and I'm very passionate
-                    and
-                    dedicated to my work.
-                    With 2 years experience as a Web developer, I believe I have acquired the skills and knowledge
-                    necessary to make your project a success. I enjoy every step of the design process, from discussion
-                    and
-                    collaboration to concept and execution, but I find the most satisfaction in seeing the finished
-                    product
-                    do everything for you that it was created to do.</p>
-            </div>
-            <a href="#contact" class="btn hvr-bounce-in mt-2">Send Message </a>
-        </div>
-
-        <div class="role wrapper ml-5">
-            <h2 class="mb-4"><span class="blue">#</span>What I do?</h2>
-            <p>Here is what i do as a frontend developer </p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="role_content_holder">
-                            <div class="role_content">
-                                <div class="">
-                                    <i class="fab fa-figma"></i>
-                                    <h4 class="mt-4">UI/UX Design</h4>
-                                    <p class="mt-2 small">I design awesome wireframes and mockups for websites and
-                                        mobile
-                                        applications</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="role_content_holder">
-                            <div class="role_content">
-                                <div class="">
-                                    <i class="fas fa-laptop-code"></i>
-                                    <h4 class="mt-4">Web Development</h4>
-                                    <p class="mt-2 small">I design and develop user interfaces for websites and web
-                                        apps</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="role_content_holder">
-                            <div class="role_content">
-                                <div class="">
-                                    <i class="fas fa-tools"></i>
-                                    <h4 class="mt-4">Web Maintenance</h4>
-                                    <p class="mt-2 small">I always ensure that I maintain and update my projects with
-                                        the
-                                        latest web technologies</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="skills" class="wrapper ml-5">
-
-            <h2 class="mb-4"><span class="blue">#</span>MyStack💪</h2>
-
-            <div class="progress_holder mt-2">
-                <div class="progress_bar" id="htmlProgress"></div>
-                <span>HTML5 90%</span>
-            </div>
-            <div class="progress_holder mt-2">
-                <div class="progress_bar" id="cssProgress"></div>
-                <span>CSS 85%</span>
-            </div>
-            <div class="progress_holder mt-2">
-                <div class="progress_bar" id="jsProgress"></div>
-                <span>Javascript 60%</span>
-            </div>
-            <div class="progress_holder mt-2">
-                <div class="progress_bar" id="figmaProgress"></div>
-                <span>Figma 50% </span>
-            </div>
-
-        </div>
-
-
-        <div class="wrapper ml-5" id="projects">
-            <h2 class="mb-4"><span class="orange">#</span>Some of my Projects</h2>
-            <p>Some of my beautifully coded projects</p>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="project_card">
-                            <div class="project_card_content">
-                                <div class="">
-                                    <div class="wkt logo_container">
-                                        <img src="assets/img/westkoast logo.png" class="w-100" alt="">
-                                    </div>
-                                    <h3 class="mt-4">Westkoast Official Website</h3>
-                                    <p class="small">I was part of the awesome team that was responsible for bringing
-                                        the design to
-                                        life
-                                    </p>
-                                    <a href="https://westkoast.netlify.com/" target="_blank"
-                                        class="btn hvr-bounce-in">Visit Site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project_card">
-                            <div class="project_card_content">
-                                <div class="">
-                                    <div class="d_buddy logo_container">
-                                        <img src="assets/img/d-buddy img.svg" class="w-100" alt="">
-                                    </div>
-                                    <h3 class="mt-4">d-buddy</h3>
-                                    <p class="small">A simple landing page for a delivery firm in my local area.
-                                    </p>
-                                    <a href="http://oke.codes/d-buddy/" class="btn hvr-bounce-in" target="_blank">Visit
-                                        Site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project_card">
-                            <div class="project_card_content">
-                                <div class="">
-                                    <div class="toonix logo_container">
-                                        <img src="assets/img/toonix img.svg" class="w-100" alt="">
-                                    </div>
-                                    <h3 class="mt-4">Toonix</h3>
-                                    <p class="small">A simple landing page for a music streaming application.
-                                    </p>
-                                    <a href="https://toonix.netlify.com/" target="_blank"
-                                        class="btn hvr-bounce-in">Visit Site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="assets/img/hero_img.PNG" alt="">
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="wrapper testimonial mt-5">
-            <div class="testimonial_content_holder">
-                <div class="testimonial_content">
-                    <h1 class="quote">"</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi libero, sint vel harum
-                        veritatis
-                        rerum error ratione illum qui quis, minus similique! Ipsum optio qui delectus molestiae harum
-                        eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi libero, sint vel
-                        harum
-                        veritatis
-                        rerum error ratione illum qui quis, minus similique! Ipsum optio qui delectus molestiae harum
-                        eveniet.
-                    </p>
-                    <div class="testimonial_img_holder">
-                        <div class="testimonial_img_content">
-                            <img src="assets/img/tammy.JPG" alt="">
-                        </div>
-                    </div>
-                    <div class="testifier mt-2">
-                        <a href="https://ogurinkabenjamin.me" target="_blank" class="orange">Ogurinka Benjamin</a>
-                        <p class="small">Lead Frontend Developer, Proinsight technologies</p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-
-        <div class="wrapper ml-5" id="contact">
-            <div class="contact_content">
-                <h3>Leave a message</h3>
-                <form action="https://usebasin.com/f/3d0a6e5da0dc" method="POST">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" placeholder="Full name" required></input>
-                            <input type="email" placeholder="Email" name="email" required></input>
-                            <input type="tel" placeholder="Phone" required></input>
-                        </div>
-                        <div class="col-md-6">
-                            <textarea placeholder="Message"></textarea>
-                            <button type="submit" class="send btn mt-2">Send Message </a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <div class="bg_x">
+        <h1 class="text_has_color"></h1>
     </div>
-    <button id="topBtn" class="scroll_top" title="Let's get higher"><i class="fas fa-arrow-up"></i></button>
+    <section class="about section_padding mt-4 pb-5">
+        <h2 class="text_has_color">About me</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="about_img">
+                    <div class="about_img_holder">
+                        <img src="assets/img/about_img.jpeg" class="w-100" alt="">
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-md-6">
+                <div class="about_text_holder">
+                    <div class="about_text mt-4">
+                        <p>
+                            Hello, my name is <span class="text_has_color">Ogbe Daniel </span>. I am an Ever Growing Front end Developer.
+                            I currently live in Port Harcourt, Nigeria. With a year experience as a Web developer, I believe I have acquired certain skills and knowledge
+                            necessary to make your project a success. I enjoy every step of the design process, from discussion
+                            to make the web a beautiful place, but I find the most satisfaction in adding value in whatever position i find myself.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg_holder">
+        <div class="bg_big"></div>
+    </div>
+    
+    <section class="stack section_padding mt-5 pb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text_has_color">Tools and Technologies</h2>
+                <p>Some things I've learned and worked with in one way or another.</p>
+        
+                <div class="stack_list">
+                    <ul>
+                        <li>
+                            <p class="text_has_color">HTML</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">CSS</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">Bootstrap</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">Javascript</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">jQurey</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">GitHub</p>
+                        </li>
+                    </ul>
+        
+                    <ul>
+                        <li>
+                            <p class="text_has_color">GitLab</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">Netlify</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">Sass</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">Bulma</p>
+                        </li>
+                        <li>
+                            <p class="text_has_color">React</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio">
+                    <div class="portfolio_inner">
+                        <h3>Want to see some awesome projects of mine <span class="text_has_color">?</span></h3>
+                        <div class="btn_holder mt-3">
+                            <a href="portfolio.html" class="default_btn">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+       
+    <section class="contact section_padding mt-3 pb-5">
+        <div class="contact_content">
+            <h3 class="text_has_color">Leave a message</h3>
+            <form action="https://usebasin.com/f/3d0a6e5da0dc" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form_element mt-3">
+                            <input type="text" placeholder="Full name" required>
+                        </div>
+                       <div class="form_element mt-3">
+                        <input type="email" placeholder="Email" name="email" required>
+                       </div>
+                       <div class="form_element mt-3">
+                        <input type="tel" placeholder="Phone" required>
+                       </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <textarea placeholder="Message" class="mt-3"></textarea>
+                       
+                        <div class="btn_holder mt-3">
+                            <button type="submit" class="default_btn">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="hmu mt-5">
+                <h2>OR</h2>
+
+                <div class="row section_padding">
+                    <div class="col-md-6">
+                        <div class="social_holder">
+                            <h4>Follow me online</h4>
+        
+                            <div class="socials mt-2">
+                                <a href="#">
+                                    <span class="icon_holder ml-3">
+                                        <i class="ti-instagram"></i>
+                                    </span>
+                                   
+                                </a>
+                                <a href="#">
+                                    <div class="icon_holder ml-3">
+                                        <i class="ti-facebook"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon_holder ml-3">
+                                        <i class="ti-twitter-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="info_holder">
+                            <span class="ti-mobile text_has_color mt-1"></span> <p class="ml-3">(+234)7089482891</p>
+                        </div>
+                        <div class="info_holder">
+                            <span class="ti-email text_has_color mt-1"></span> <p class="ml-3">oke@loopedreality.com</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>  
+
+
 
 </body>
 <script src="js/script.js"></script>
