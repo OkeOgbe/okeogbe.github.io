@@ -1,7 +1,8 @@
 :root {
-    --default_dark: #151618;
-    --default_purple: #732c7b;
+    --default_dark: #262833;
+    --default_purple: #bf4d60;
     --header_font: "Raleway", sans-serif;
+    --text_font: 'Sen', sans-serif;
 }
 
 h1,
@@ -17,7 +18,7 @@ i,
 input,
 a,
 button {
-    font-family: var(--header_font) !important;
+    font-family: var(--text_font) !important;
 }
 
 body {
