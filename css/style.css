@@ -40,7 +40,7 @@ body a:hover {
     text-decoration: none;
 }
 
-.default_btn{
+.default_btn {
     outline: none;
     text-align: center;
     text-decoration: none;
@@ -58,7 +58,7 @@ body a:hover {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
-.default_btn:hover{
+.default_btn:hover {
     background: var(--default_purple);
     color: #fff;
 }
@@ -67,7 +67,7 @@ body a:hover {
     color: var(--default_purple) !important;
 }
 
-p{
+p {
     color: #f5f5f5;
 }
 
@@ -101,7 +101,7 @@ p{
     }
 }
 
-.dot{
+.dot {
     animation: blink 1.5s ease-in-out infinite;
 }
 
@@ -123,10 +123,10 @@ p{
     }
 }
 
-.bg_x h1{
-   width: 100px;
-   height: 100px;
-   background: var(--default_purple);
+.bg_x h1 {
+    width: 100px;
+    height: 100px;
+    background: var(--default_purple);
     position: absolute;
     top: 500px;
     right: 200px;
@@ -136,24 +136,25 @@ p{
 
 @keyframes spin {
     from {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-.bg_big{
+.bg_big {
     width: 100%;
     height: 100%;
     background: var(--default_purple);
     opacity: 0.2;
     border-radius: 50%;
     right: -100px;
-    
+
 }
 
-.bg_holder{
+.bg_holder {
     width: 500px;
     height: 500px;
     position: absolute;
@@ -183,57 +184,61 @@ p{
     text-align: justify;
 }
 
-.hero_img_holder{
+.hero_img_holder {
     display: flex;
     align-items: center;
     height: 80vh;
 }
 
-.about h2{
+.hero_img_holder img {
+    padding: 3em;
+}
+
+.about h2 {
     text-align: center;
 }
 
-.about_text_holder{
+.about_text_holder {
     display: flex;
     align-items: center;
     min-height: 50vh;
 }
 
-.about_text{
+.about_text {
     color: #f5f5f5;
     font-size: 17px;
 }
 
-.about_img_holder{
+.about_img_holder {
     width: 270px;
     margin: 0 auto;
     box-shadow: 19px 19px 0px rgba(0, 0, 0, 0.55);
 }
 
-.stack_list{
+.stack_list {
     display: flex;
 }
 
-.stack_list ul li{
+.stack_list ul li {
     font-size: 19px;
     font-weight: bold;
 }
 
-.portfolio{
+.portfolio {
     display: flex;
     align-items: center;
     min-height: 50vh;
 }
 
-.portfolio_inner{
+.portfolio_inner {
     text-align: center;
 }
 
-.portfolio_inner h3{
+.portfolio_inner h3 {
     color: #f5f5f5;
 }
 
-.portfolio_inner .default_btn{
+.portfolio_inner .default_btn {
     margin: 0 auto;
 }
 
@@ -242,35 +247,37 @@ textarea {
     width: 100%;
     font-size: 17px;
     padding: 0.6em;
-    border: 2px solid var(--default_purple);
+    border: none;
+    border-bottom: 2px solid var(--default_purple);
     color: #f5f5f5;
-   background: transparent;
-   outline: none;
-   
+    background: transparent;
+    outline: none;
+
 }
 
 textarea {
     min-height: 10em;
 }
 
-.hmu h2{
+.hmu h2 {
     text-align: center;
     color: #f5f5f5;
 }
 
-.social_holder h4{
+.social_holder h4 {
     color: #f5f5f5;
 }
 
-.socials{
+.socials {
     display: flex;
 }
 
 
-.icon_holder{
+.icon_holder {
     width: 50px;
     height: 50px;
-    border-radius: 50%;;
+    border-radius: 50%;
+    ;
     background: var(--default_purple);
     padding: 1em;
     opacity: 0.2;
@@ -279,63 +286,64 @@ textarea {
     justify-content: center;
 }
 
-.icon_holder i{
+.icon_holder i {
     color: #fff;
 }
 
-.info_holder{
+.info_holder {
     display: flex;
 }
 
 /*Media Queries*/
 @media screen and (max-width: 996px) {
-    .section_padding{
+    .section_padding {
         padding-right: 2em;
         padding-left: 2em;
     }
 
     .reverse-column-order {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		flex-direction: column-reverse;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: reverse;
-		-ms-flex-direction: column-reverse;
-	}
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+    }
 
-    .bg_x h1{
+    .bg_x h1 {
         top: 15em;
         right: 1em;
     }
 
-    .hero_text_holder{
-        height: 60vh;
+    .hero_text_holder {
+        height: 50vh;
     }
 
-    .hero_text_content{
+    .hero_text_content {
         text-align: left;
     }
 
-    .hero_img_holder{
-            align-items: flex-end;
+    .hero_img_holder {
+        align-items: flex-end;
         height: 55vh;
     }
 
-    .hero_img_holder img{
+    .hero_img_holder img {
         width: 100%;
+        padding: 0;
     }
 
-    .about_img_holder{
+    .about_img_holder {
         width: 100%;
-        
+
     }
 
-    .about_img{
+    .about_img {
         padding: 0 1em;
     }
 
-    .about_text_holder{
+    .about_text_holder {
         margin-top: 1em;
     }
 }
